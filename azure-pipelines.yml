@@ -35,7 +35,7 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'ec2-ssh'
-    sourceFolder: 'file:///d:/a/1/a'
+    sourceFolder: 'https://dev.azure.com/dipskalal96/Dotnet/_build/results?buildId=13&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=86dd5fa6-f51e-57a1-6dd4-575fd75fc7ef&l=441'
     contents: 'SampleWebApplication.zip'
     targetFolder: '/home/ec2-user/deploy'
     readyTimeout: '20000'
