@@ -32,3 +32,10 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'ec2-ssh'
+    sourceFolder: 'file:///d:/a/1/a'
+    contents: 'SampleWebApplication.zip'
+    targetFolder: '/home/ec2-user/deploy'
+    readyTimeout: '20000'
